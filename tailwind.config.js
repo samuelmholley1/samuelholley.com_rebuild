@@ -7,15 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'primary-orange': '#F36C21',
+        'deep-blue': '#0B3D91',
+        'dark-text': '#1a1a1a',
+        'light-bg': '#f9f9f9',
+      },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         serif: ['Playfair Display', 'serif'],
-      },
-      colors: {
-        'primary-orange': 'var(--primary-orange)',
-        'deep-blue': 'var(--deep-blue)',
-        'dark-text': 'var(--dark-text)',
-        'light-bg': 'var(--light-bg)',
       },
     },
   },
