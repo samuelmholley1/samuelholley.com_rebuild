@@ -140,12 +140,12 @@ export default function HomePage() {
         <div className="container mx-auto px-6 text-center max-w-2xl">
           <h3 className="text-2xl font-medium text-deep-blue mb-4">From AI Anxiety to Strategic Asset</h3>
           <blockquote className="italic text-lg text-dark-text mb-4">
-            "Working with Samuel was more than learning how to use a tool; it was learning how to
+            &ldquo;Working with Samuel was more than learning how to use a tool; it was learning how to
             think again. I went from feeling constantly behind to feeling like the most
-            forward-thinking person in the room. I didn't just reclaim hours in my week; I reclaimed
-            my confidence."
+            forward-thinking person in the room. I didn&apos;t just reclaim hours in my week; I reclaimed
+            my confidence.&rdquo;
           </blockquote>
-          <cite className="block text-sm text-dark-text">— Elizabeth C., Non-Profit Executive & B2C Coaching Client</cite>
+          <cite className="block text-sm text-dark-text">&mdash; Elizabeth C., Non-Profit Executive &amp; B2C Coaching Client</cite>
         </div>
       </section>
       {/* Final CTA */}
@@ -153,12 +153,12 @@ export default function HomePage() {
         <div className="container mx-auto px-6 text-center">
           <h3 className="text-3xl font-semibold text-deep-blue mb-4">Ready to Reclaim Your Edge?</h3>
           <p className="text-dark-text max-w-2xl mx-auto mb-8 leading-relaxed">
-            Let's find out if my approach is right for you. Book a complimentary, no-pressure
+            Let&apos;s find out if my approach is right for you. Book a complimentary, no-pressure
             30-minute AI Audit. In this single session, we will diagnose the #1 friction point in
             your current workflow and map out one actionable step you can take today to begin
             reclaiming your time and focus. This is a strategy session, not a sales pitch.
           </p>
-          <button className="cta">Book My Free AI Audit & Get Clarity Now</button>
+          <button className="cta">Book My Free AI Audit &amp; Get Clarity Now</button>
         </div>
       </section>
       {/* Footer */}
