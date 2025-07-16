@@ -1,24 +1,33 @@
 
+/* Import Tailwind's base, components, and utilities layers */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Define all brand colors and fonts at the root level */
+@layer base {
 :root {
   --primary-orange: #F36C21;
   --deep-blue: #0B3D91;
   --dark-text: #1a1a1a;
   --light-bg: #f9f9f9;
   --white: #ffffff;
+
+  /* Define font variables for Tailwind config */
+  --font-inter: 'Inter', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
 }
 
+/* Apply base font to the body */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-inter);
   color: var(--dark-text);
 }
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-  color: var(--deep-blue);
+/* Apply heading font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair);
+}
 }
 
 .hero-headline {
