@@ -27,7 +27,6 @@ const Navbar = () => {
           />
         </Link>
         
-        {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href} className="text-dark-text hover:text-deep-blue transition-colors">
@@ -39,19 +38,13 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
-            {isOpen ? (
-              <XMarkIcon className="h-6 w-6 text-dark-text" />
-            ) : (
-              <Bars3Icon className="h-6 w-6 text-dark-text" />
-            )}
+            {isOpen ? <XMarkIcon className="h-6 w-6 text-dark-text" /> : <Bars3Icon className="h-6 w-6 text-dark-text" />}
           </button>
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg">
           <div className="flex flex-col items-center space-y-4 py-4">

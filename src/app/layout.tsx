@@ -1,6 +1,19 @@
 import type { Metadata } from "next";
-import "./globals.css"; // Your globals.css handles fonts
+import { Inter, Playfair_Display } from "next/font/google";
+import "./globals.css";
 import Navbar from "../components/Navbar";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-playfair",
+});
 
 export const metadata: Metadata = {
   title: "Samuel Holley AI | Reclaim by Design",
@@ -14,12 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${inter.variable} ${playfair.variable} bg-white text-dark-text`}>
         <Navbar />
-        <main className="pt-24">
+        <main>
           {children}
         </main>
-        {/* The Footer component can be added here later if needed */}
       </body>
     </html>
   );

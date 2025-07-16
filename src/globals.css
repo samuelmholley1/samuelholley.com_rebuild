@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-orange: #F36C21;
+  --deep-blue: #0B3D91;
+  --dark-text: #1a1a1a;
+  --light-bg: #f9f9f9;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
