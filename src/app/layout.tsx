@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${playfair.variable} bg-white text-dark-text`}>
         <Navbar />
-        <main>
+        <main className="pt-24">
           {children}
         </main>
       </body>
