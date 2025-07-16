@@ -1,7 +1,9 @@
 "use client";
+
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navLinks = [
   { href: '#my-method', label: 'My Method' },
@@ -10,9 +12,10 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header className="bg-white fixed w-full top-0 z-50 shadow-md">
+    <header className="bg-white/90 fixed w-full top-0 z-50 shadow-md backdrop-blur-sm">
       <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
         <Link href="/" className="relative h-10 w-48">
           <Image
@@ -23,56 +26,46 @@ const Navbar = () => {
             priority
           />
         </Link>
-        {/* Desktop Nav */}
+        
+        {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-6">
-          {navLinks.map(link => (
-            <a key={link.href} href={link.href} className="text-dark-text hover:text-deep-blue">{link.label}</a>
+          {navLinks.map((link) => (
+            <a key={link.href} href={link.href} className="text-dark-text hover:text-deep-blue transition-colors">
+              {link.label}
+            </a>
           ))}
+          <a href="#ai-audit" className="bg-primary-orange text-white font-bold py-2 px-4 rounded hover:opacity-90 transition-opacity">
+            Book Free Audit
+          </a>
         </div>
-        <a href="#ai-audit" className="bg-primary-orange text-white font-bold py-2 px-4 rounded hover:opacity-90 hidden md:inline-block">
-          Book Free Audit
-        </a>
-        {/* Hamburger Icon */}
-        <button
-          className="md:hidden flex items-center justify-center p-2 rounded focus:outline-none"
-          aria-label="Open menu"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? (
-            // X icon
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-7 h-7 text-dark-text">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          ) : (
-            // Hamburger icon
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-7 h-7 text-dark-text">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          )}
-        </button>
-        {/* Mobile Menu */}
-        {menuOpen && (
-          <div className="fixed inset-0 bg-black bg-opacity-40 z-50 flex flex-col items-end">
-            <div className="bg-white w-3/4 max-w-xs h-full shadow-lg p-8 flex flex-col gap-6">
-              <button
-                className="self-end mb-8"
-                aria-label="Close menu"
-                onClick={() => setMenuOpen(false)}
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-7 h-7 text-dark-text">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-              {navLinks.map(link => (
-                <a key={link.href} href={link.href} className="text-dark-text text-lg font-medium hover:text-primary-orange" onClick={() => setMenuOpen(false)}>{link.label}</a>
-              ))}
-              <a href="#ai-audit" className="bg-primary-orange text-white font-bold py-2 px-4 rounded hover:opacity-90 mt-4 text-center" onClick={() => setMenuOpen(false)}>
-                Book Free Audit
-              </a>
-            </div>
-          </div>
-        )}
+
+        {/* Mobile Menu Button */}
+        <div className="md:hidden">
+          <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu">
+            {isOpen ? (
+              <XMarkIcon className="h-6 w-6 text-dark-text" />
+            ) : (
+              <Bars3Icon className="h-6 w-6 text-dark-text" />
+            )}
+          </button>
+        </div>
       </nav>
+
+      {/* Mobile Menu Overlay */}
+      {isOpen && (
+        <div className="md:hidden bg-white shadow-lg">
+          <div className="flex flex-col items-center space-y-4 py-4">
+            {navLinks.map((link) => (
+              <a key={link.href} href={link.href} onClick={() => setIsOpen(false)} className="text-dark-text hover:text-deep-blue text-lg">
+                {link.label}
+              </a>
+            ))}
+            <a href="#ai-audit" onClick={() => setIsOpen(false)} className="bg-primary-orange text-white font-bold py-3 px-6 rounded hover:opacity-90 w-3/4 text-center">
+              Book Free Audit
+            </a>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
