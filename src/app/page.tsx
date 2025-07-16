@@ -1,10 +1,8 @@
-import Layout from '@/app/layout'
 import HeroSection from './HeroSection'
 import Image from 'next/image'
-
 export default function HomePage() {
   return (
-    <Layout>
+    <>
       <HeroSection>
         <section className="hero pt-24" data-aos="fade-up">
           <div className="container mx-auto px-6 text-center">
@@ -160,6 +158,6 @@ export default function HomePage() {
           </small>
         </div>
       </footer>
-    </Layout>
+    </>
   )
 }
