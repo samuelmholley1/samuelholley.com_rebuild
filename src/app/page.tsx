@@ -1,8 +1,10 @@
+import HeroSection from '../components/HeroSection';
 import Image from 'next/image';
+
 export default function HomePage() {
   return (
     <>
-      {/* Hero Section */}
+      <HeroSection />
 
       {/* Promise Section */}
       <section className="promise bg-light-bg py-20" data-aos="fade-up">
@@ -48,6 +50,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
       {/* Guide Section */}
       <section className="guide py-20" data-aos="fade-up">
         <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
@@ -76,6 +79,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
       {/* Testimonial Section */}
       <section className="testimonial bg-light-bg py-20" data-aos="fade-up">
         <div className="container mx-auto px-6 text-center max-w-2xl">
