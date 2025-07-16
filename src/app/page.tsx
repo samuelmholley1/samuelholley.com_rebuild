@@ -91,7 +91,7 @@ export default function HomePage() {
         <div className="container mx-auto px-6 text-center">
           <h3 className="text-3xl font-semibold text-deep-blue mb-4">Ready to Reclaim Your Edge?</h3>
           <p className="text-dark-text max-w-2xl mx-auto mb-8 leading-relaxed">
-            Let's find out if my approach is right for you. Book a complimentary, no-pressure 30-minute AI Audit. In this single session, we will diagnose the #1 friction point in your current workflow and map out one actionable step you can take today to begin reclaiming your time and focus. This is a strategy session, not a sales pitch.
+            Let&apos;s find out if my approach is right for you. Book a complimentary, no-pressure 30-minute AI Audit. In this single session, we will diagnose the #1 friction point in your current workflow and map out one actionable step you can take today to begin reclaiming your time and focus. This is a strategy session, not a sales pitch.
           </p>
           <button className="bg-primary-orange text-white font-bold py-3 px-6 rounded hover:opacity-90 transition-opacity">
             Book My Free Audit & Reclaim Your Edge.
