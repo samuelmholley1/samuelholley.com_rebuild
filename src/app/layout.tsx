@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        <main>
+        <main className="pt-24">
           {children}
         </main>
         {/* The Footer component can be added here later if needed */}
