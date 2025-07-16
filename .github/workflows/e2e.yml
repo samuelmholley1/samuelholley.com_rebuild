@@ -1,0 +1,30 @@
+name: E2E Smoke Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  playwright-test:
+    name: 'Run Playwright Smoke Test'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Playwright tests
+        run: npx playwright test
+        env:
+          # This URL points to your main Vercel project.
+          # We must set this as a secret in your GitHub repository settings.
+          VERCEL_URL: ${{ secrets.PROD_URL }}
