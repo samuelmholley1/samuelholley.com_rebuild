@@ -1,3 +1,4 @@
+"use client";
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -17,8 +18,8 @@ const Navbar = () => {
           <Image
             src="/samuel_holley_logo_transparent.png"
             alt="Samuel Holley Logo"
-            width={180}
-            height={30}
+            width={150}
+            height={26}
             priority
           />
         </Link>
