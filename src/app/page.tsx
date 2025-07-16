@@ -79,7 +79,7 @@ export default function HomePage() {
         <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div className="guide-photo">
             <Image
-              src="https://via.placeholder.com/320x400?text=Your+Photo"
+              src="/samuel_holley_logo_transparent.png"
               alt="Samuel Holley"
               width={320}
               height={400}
