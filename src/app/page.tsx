@@ -8,9 +8,9 @@ export default function HomePage() {
       {/* Promise Section */}
       <section className="promise bg-light-bg py-20">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl font-semibold text-deep-blue mb-4">
-            It’s Not About Mastering AI. It’s About Reclaiming What’s Human.
-          </h2>
+          <h1 className="text-5xl font-bold text-deep-blue mb-6">
+            AI Isn&apos;t the Threat. Overwhelm Is.
+          </h1>
           <p className="text-dark-text max-w-3xl mx-auto mb-12">
             The endless race to keep up with technology is a distraction from what truly matters.
           </p>
