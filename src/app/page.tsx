@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <Layout>
       <HeroSection>
-        <section className="hero" data-aos="fade-up">
+        <section className="hero pt-24" data-aos="fade-up">
           <div className="container mx-auto px-6 text-center">
             <h1 className="text-5xl font-bold text-deep-blue">
               AI Isn&apos;t the Threat. Overwhelm Is.
