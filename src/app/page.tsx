@@ -81,7 +81,7 @@ export default function HomePage() {
         <div className="container mx-auto px-6 text-center max-w-2xl">
           <h3 className="text-2xl font-medium text-deep-blue mb-4">From AI Anxiety to Strategic Asset</h3>
           <blockquote className="italic text-lg text-dark-text mb-4">
-            “Working with Samuel was more than learning how to use a tool; it was learning how to think again. I went from feeling constantly behind to feeling like the most forward-thinking person in the room. I didn’t just reclaim hours in my week; I reclaimed my confidence.”
+            “Working with Samuel was more than learning how to use a tool; it was learning how to think again. I went from feeling constantly behind to feeling like the most forward-thinking person in the room. I didn&apos;t just reclaim hours in my week; I reclaimed my confidence.”
           </blockquote>
           <cite className="block text-sm text-dark-text not-italic">— Elizabeth C., Non-Profit Executive & B2C Coaching Client</cite>
         </div>
