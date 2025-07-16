@@ -1,19 +1,31 @@
-import { test, expect } from '@playwright/test';
 
-// We will set the VERCEL_URL in the GitHub Action. It defaults to localhost for local testing.
+import { test, expect } from '@playwright/test';
 const targetUrl = process.env.VERCEL_URL || 'http://localhost:3000';
 
-test('Smoke Test: Homepage Loads and Core Elements are Visible', async ({ page }) => {
-  // 1. Navigate to the live page. Test will fail if the page doesn't load.
-  await page.goto(targetUrl);
+test('Debug Test: Capture Homepage State', async ({ page }) => {
+  try {
+    // Navigate to the live page and wait for the network to be mostly idle.
+    await page.goto(targetUrl, { waitUntil: 'networkidle', timeout: 15000 });
 
-  // 2. Assert that the main headline is visible.
-  // This confirms the main content of the page is rendering.
-  const mainHeading = page.getByRole('heading', { name: "AI Isn't the Threat. Overwhelm Is." });
-  await expect(mainHeading).toBeVisible({ timeout: 10000 }); // Wait up to 10s for content to appear
+    // Assert that the main headline is visible.
+    const mainHeading = page.getByRole('heading', { name: "AI Isn't the Threat. Overwhelm Is." });
+    await expect(mainHeading).toBeVisible({ timeout: 5000 });
+    // Assert that the Navbar's logo is visible.
+    const logo = page.getByRole('img', { name: 'Samuel Holley Logo' });
+    await expect(logo).toBeVisible();
+  } catch (error) {
+    // If any of the above assertions fail, this block will execute.
+    console.error("Test failed. Capturing page state for debugging...");
 
-  // 3. Assert that the Navbar's logo is visible.
-  // This confirms the global layout and branding are present.
-  const logo = page.getByRole('img', { name: 'Samuel Holley Logo' });
-  await expect(logo).toBeVisible();
+    // 1. Take a screenshot of the full page.
+    // This will be saved as an artifact in the GitHub Actions run.
+    await page.screenshot({ path: 'test-results/failure-screenshot.png', fullPage: true });
+    // 2. Dump the full HTML of the page as seen by the browser.
+    const pageHtml = await page.content();
+    console.log("--- START OF CAPTURED HTML ---");
+    console.log(pageHtml);
+    console.log("--- END OF CAPTURED HTML ---");
+    // Re-throw the error so the test still correctly reports a failure.
+    throw error;
+  }
 });
