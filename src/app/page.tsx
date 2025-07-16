@@ -16,7 +16,7 @@ export default function HomePage() {
           <div className="grid gap-8 md:grid-cols-3">
             {/* Time */}
             <div className="promise-item p-6 bg-white rounded-lg shadow">
-              <svg className="mx-auto mb-4 h-12 w-12 text-deep-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" aria-hidden="true">
+              <svg className="h-12 w-12 mx-auto mb-4 text-deep-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <h3 className="text-xl font-medium text-deep-blue mb-2">Reclaim Your Time</h3>
@@ -26,7 +26,7 @@ export default function HomePage() {
             </div>
             {/* Focus */}
             <div className="promise-item p-6 bg-white rounded-lg shadow">
-              <svg className="mx-auto mb-4 h-12 w-12 text-deep-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" aria-hidden="true">
+              <svg className="h-12 w-12 mx-auto mb-4 text-deep-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12C3.5 7.5 7.5 4.5 12 4.5s8.5 3 9.75 7.5c-1.25 4.5-5.25 7.5-9.75 7.5s-8.5-3-9.75-7.5z" />
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
@@ -37,7 +37,7 @@ export default function HomePage() {
             </div>
             {/* Story */}
             <div className="promise-item p-6 bg-white rounded-lg shadow">
-              <svg className="mx-auto mb-4 h-12 w-12 text-deep-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" aria-hidden="true">
+              <svg className="h-12 w-12 mx-auto mb-4 text-deep-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
               </svg>
               <h3 className="text-xl font-medium text-deep-blue mb-2">Reclaim Your Purpose</h3>
