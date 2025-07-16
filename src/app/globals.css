@@ -24,3 +24,24 @@ h1, h2, h3 {
 .hero-headline {
   font-size: clamp(2.5rem, 5vw, 4.5rem);
 }
+
+.cta {
+  background: var(--primary-orange);
+  color: var(--white);
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(243, 108, 33, 0.08);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.cta:hover, .cta:focus {
+  background: #d95c1a;
+  color: var(--white);
+  box-shadow: 0 4px 16px 0 rgba(243, 108, 33, 0.16);
+}
