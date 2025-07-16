@@ -32,10 +32,9 @@ export default function HomePage() {
           <div className="grid gap-8 md:grid-cols-3">
             {/* Time */}
             <div className="promise-item p-6 bg-white rounded-lg shadow">
-              {/* Time Icon (inline SVG) */}
-              <svg className="mx-auto mb-4" width="48" height="48" fill="none" stroke="var(--deep-blue)" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="12" cy="12" r="10" />
-                <path d="M12 6v6l4 2" />
+              {/* Time Icon (Heroicons Clock) */}
+              <svg className="mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="var(--deep-blue)" width="48" height="48" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <h3 className="text-xl font-medium text-deep-blue mb-2">Reclaim Your Time</h3>
               <p className="text-dark-text text-sm">
@@ -47,11 +46,10 @@ export default function HomePage() {
             </div>
             {/* Focus */}
             <div className="promise-item p-6 bg-white rounded-lg shadow">
-              {/* Focus Icon (inline SVG) */}
-              <svg className="mx-auto mb-4" width="48" height="48" fill="none" stroke="var(--deep-blue)" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="12" cy="12" r="10" />
-                <circle cx="12" cy="12" r="6" />
-                <circle cx="12" cy="12" r="2" />
+              {/* Focus Icon (Heroicons Eye) */}
+              <svg className="mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="var(--deep-blue)" width="48" height="48" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12C3.5 7.5 7.5 4.5 12 4.5s8.5 3 9.75 7.5c-1.25 4.5-5.25 7.5-9.75 7.5s-8.5-3-9.75-7.5z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
               <h3 className="text-xl font-medium text-deep-blue mb-2">Reclaim Your Focus</h3>
               <p className="text-dark-text text-sm">
@@ -63,10 +61,9 @@ export default function HomePage() {
             </div>
             {/* Story */}
             <div className="promise-item p-6 bg-white rounded-lg shadow">
-              {/* Purpose Icon (inline SVG) */}
-              <svg className="mx-auto mb-4" width="48" height="48" fill="none" stroke="var(--deep-blue)" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M3 21s3-7 9-13a9 9 0 0 1 9 9c-6 6-13 9-13 9z" />
-                <path d="M9 15l-3 6" />
+              {/* Purpose Icon (Heroicons Document Text) */}
+              <svg className="mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="var(--deep-blue)" width="48" height="48" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75A2.25 2.25 0 0014.25 4.5H6.75A2.25 2.25 0 004.5 6.75v10.5A2.25 2.25 0 006.75 19.5h10.5A2.25 2.25 0 0019.5 17.25V12.75M16.5 10.5l-4.5 4.5m0 0l-4.5-4.5m4.5 4.5V6.75" />
               </svg>
               <h3 className="text-xl font-medium text-deep-blue mb-2">Reclaim Your Purpose</h3>
               <p className="text-dark-text text-sm">

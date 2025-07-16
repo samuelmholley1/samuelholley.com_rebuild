@@ -14,12 +14,12 @@ const Navbar = () => {
   return (
     <header className="bg-white fixed w-full top-0 z-50 shadow-md">
       <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
-        <Link href="/">
+        <Link href="/" className="relative h-10 w-48">
           <Image
             src="/samuel_holley_logo_transparent.png"
             alt="Samuel Holley Logo"
-            width={150}
-            height={26}
+            fill={true}
+            className="object-contain"
             priority
           />
         </Link>
