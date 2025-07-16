@@ -1,15 +1,8 @@
-import React, { useEffect } from 'react'
-import Image from 'next/image'    
 import Layout from '@/app/layout'
 import HeroSection from './HeroSection'
-import 'aos/dist/aos.css'
-import AOS from 'aos'
+import Image from 'next/image'
 
 export default function HomePage() {
-  useEffect(() => {
-    AOS.init({ once: true })
-  }, [])
-
   return (
     <Layout>
       <HeroSection>
@@ -26,7 +19,6 @@ export default function HomePage() {
           </div>
         </section>
       </HeroSection>
-
       {/* Promise Section */}
       <section className="promise bg-light-bg py-20" data-aos="fade-up">
         <div className="container mx-auto px-6 text-center">
@@ -109,7 +101,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Guide Section */}
       <section className="guide py-20" data-aos="fade-up">
         <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
@@ -144,7 +135,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Testimonial Section */}
       <section className="testimonial bg-light-bg py-20" data-aos="fade-up">
         <div className="container mx-auto px-6 text-center max-w-2xl">
@@ -158,7 +148,6 @@ export default function HomePage() {
           <cite className="block text-sm text-dark-text">— Elizabeth C., Non-Profit Executive & B2C Coaching Client</cite>
         </div>
       </section>
-
       {/* Final CTA */}
       <section className="final-cta py-20" data-aos="fade-up">
         <div className="container mx-auto px-6 text-center">
@@ -172,7 +161,6 @@ export default function HomePage() {
           <button className="cta">Book My Free AI Audit & Get Clarity Now</button>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="py-8 bg-white">
         <div className="container mx-auto px-6 text-center text-sm text-dark-text">
