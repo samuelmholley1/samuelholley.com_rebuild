@@ -12,8 +12,7 @@ export default function HomePage() {
               AI Isn&apos;t the Threat. Overwhelm Is.
             </h1>
             <p className="mt-6 text-lg text-dark-text max-w-2xl mx-auto">
-              I help anxious, intelligent professionals and teams turn AI complexity into a strategic
-              advantage, reclaiming 5–10+ hours of focused time per week.
+              I help anxious, intelligent professionals and teams transform AI complexity into a strategic advantage and reclaim 5–10+ hours of focused time each week.
             </p>
             <button className="cta mt-8">Book My Free 30-Min AI Audit</button>
           </div>
@@ -50,7 +49,7 @@ export default function HomePage() {
                 Your most finite resource is being drained by repetitive tasks, administrative drag,
                 and the mental energy it takes to manage it all. We will design intelligent systems
                 to eliminate the busywork, giving you back hours in your week—not for more work, but
-                for more of what gives you purpose.
+                for more of what truly matters.
               </p>
             </div>
             {/* Focus */}
@@ -90,7 +89,7 @@ export default function HomePage() {
                 <path d="M3 21s3-7 9-13a9 9 0 0 1 9 9c-6 6-13 9-13 9z" />
                 <path d="M9 15l-3 6" />
               </svg>
-              <h3 className="text-xl font-medium text-deep-blue mb-2">Reclaim Your Story</h3>
+              <h3 className="text-xl font-medium text-deep-blue mb-2">Reclaim Your Purpose</h3>
               <p className="text-dark-text text-sm">
                 In the age of AI, the greatest risk is allowing your purpose and voice to be
                 dictated by the algorithms of others. This is the deepest work we do. We use AI as a
@@ -127,8 +126,7 @@ export default function HomePage() {
               professionals, not just to pass a test, but to manage their anxiety, build their
               confidence, and reclaim their sense of control.
               <br />
-              After navigating my own journey through caregiver burnout and rebuilding my life from
-              the ground up, I turned that same methodology inward. Now, I apply that unique blend
+              After my own journey through caregiver burnout forced me to rebuild my life from the ground up, I became my own first client. Now, I apply that unique blend
               of empathetic coaching, ethical strategy, and systems design to the most overwhelming
               system of our time: Artificial Intelligence.
             </p>
@@ -158,7 +156,7 @@ export default function HomePage() {
             your current workflow and map out one actionable step you can take today to begin
             reclaiming your time and focus. This is a strategy session, not a sales pitch.
           </p>
-          <button className="cta">Book My Free AI Audit &amp; Get Clarity Now</button>
+          <button className="cta">Book My Free Audit &amp; Reclaim Your Edge.</button>
         </div>
       </section>
       {/* Footer */}
