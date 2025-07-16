@@ -21,7 +21,8 @@ const Navbar = () => {
           <Image
             src="/samuel_holley_logo_transparent.png"
             alt="Samuel Holley Logo"
-            fill={true}
+            width={192}
+            height={40}
             className="object-contain"
             priority
           />
