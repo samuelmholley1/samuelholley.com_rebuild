@@ -1,18 +1,8 @@
+
 'use client';
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 export default function HeroSection() {
-  useEffect(() => {
-    AOS.init({
-      duration: 750,
-      once: true,
-    });
-  }, []);
-
   return (
-    <section className="hero bg-white py-20" data-aos="fade-up">
+    <section className="hero bg-white py-20">
       <div className="container mx-auto px-6 text-center">
         <h1 className="text-5xl font-bold text-deep-blue mb-6">
           AI Isn&apos;t the Threat. Overwhelm Is.
