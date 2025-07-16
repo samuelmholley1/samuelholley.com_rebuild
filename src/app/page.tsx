@@ -32,15 +32,8 @@ export default function HomePage() {
           <div className="grid gap-8 md:grid-cols-3">
             {/* Time */}
             <div className="promise-item p-6 bg-white rounded-lg shadow">
-              <svg
-                className="mx-auto mb-4"
-                width="48"
-                height="48"
-                fill="none"
-                stroke="var(--deep-blue)"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
+              {/* Time Icon (inline SVG) */}
+              <svg className="mx-auto mb-4" width="48" height="48" fill="none" stroke="var(--deep-blue)" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
                 <circle cx="12" cy="12" r="10" />
                 <path d="M12 6v6l4 2" />
               </svg>
@@ -54,15 +47,8 @@ export default function HomePage() {
             </div>
             {/* Focus */}
             <div className="promise-item p-6 bg-white rounded-lg shadow">
-              <svg
-                className="mx-auto mb-4"
-                width="48"
-                height="48"
-                fill="none"
-                stroke="var(--deep-blue)"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
+              {/* Focus Icon (inline SVG) */}
+              <svg className="mx-auto mb-4" width="48" height="48" fill="none" stroke="var(--deep-blue)" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
                 <circle cx="12" cy="12" r="10" />
                 <circle cx="12" cy="12" r="6" />
                 <circle cx="12" cy="12" r="2" />
@@ -77,15 +63,8 @@ export default function HomePage() {
             </div>
             {/* Story */}
             <div className="promise-item p-6 bg-white rounded-lg shadow">
-              <svg
-                className="mx-auto mb-4"
-                width="48"
-                height="48"
-                fill="none"
-                stroke="var(--deep-blue)"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
+              {/* Purpose Icon (inline SVG) */}
+              <svg className="mx-auto mb-4" width="48" height="48" fill="none" stroke="var(--deep-blue)" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M3 21s3-7 9-13a9 9 0 0 1 9 9c-6 6-13 9-13 9z" />
                 <path d="M9 15l-3 6" />
               </svg>
