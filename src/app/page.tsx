@@ -23,19 +23,19 @@ export default function HomePage() {
          <div className="grid gap-8 md:grid-cols-3">
            {/* Time */}
            <div className="promise-item p-6 bg-white rounded-lg shadow">
-             <svg className="h-12 w-12 mx-auto mb-4 text-deep-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+             <svg className="h-8 w-8 mx-auto mb-4 text-deep-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
              <h3 className="text-xl font-medium text-deep-blue mb-2">Reclaim Your Time</h3>
              <p className="text-dark-text text-sm">Your most finite resource is being drained by repetitive tasks, administrative drag, and the mental energy it takes to manage it all. We will design intelligent systems to eliminate the busywork, giving you back hours in your week—not for more work, but for more of what truly matters.</p>
            </div>
            {/* Focus */}
            <div className="promise-item p-6 bg-white rounded-lg shadow">
-             <svg className="h-12 w-12 mx-auto mb-4 text-deep-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12c3.5-7.5 7.5-4.5 12-4.5s8.5 3 9.75 7.5-5.25 7.5-9.75 7.5-8.5-3-9.75-7.5z" /><path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+             <svg className="h-8 w-8 mx-auto mb-4 text-deep-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12c3.5-7.5 7.5-4.5 12-4.5s8.5 3 9.75 7.5-5.25 7.5-9.75 7.5-8.5-3-9.75-7.5z" /><path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
              <h3 className="text-xl font-medium text-deep-blue mb-2">Reclaim Your Focus</h3>
              <p className="text-dark-text text-sm">Information overload creates strategic fog, making it impossible to distinguish the urgent from the important. We will cut through the noise to clarify your highest-leverage priorities, protecting your focus and turning complexity into confident, clear decision-making.</p>
            </div>
            {/* Story */}
            <div className="promise-item p-6 bg-white rounded-lg shadow">
-              <svg className="h-12 w-12 mx-auto mb-4 text-deep-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>
+              <svg className="h-8 w-8 mx-auto mb-4 text-deep-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>
              <h3 className="text-xl font-medium text-deep-blue mb-2">Reclaim Your Purpose</h3>
              <p className="text-dark-text text-sm">In the age of AI, the greatest risk is allowing your purpose and voice to be dictated by the algorithms of others. This is the deepest work we do. We use AI as a cognitive partner to amplify your unique insights and values, ensuring that technology serves your story.</p>
            </div>
